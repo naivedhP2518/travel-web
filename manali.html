@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manali Trip Itinerary</title>
+  <style>
+        body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #0e0e1a;
+      color: #fff;
+    }
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: auto;
+      padding: 20px 0;
+    }
+    h1 {
+      text-align: center;
+      color: #f57c00;
+    }
+    .back-btn {
+      position: fixed;
+      top: 15px;
+      right: 20px;
+      background: #f57c00;
+      color: #0e0e1a;
+      padding: 10px 18px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background 0.3s;
+      z-index: 1000;
+    }
+    .back-btn:hover {
+      background: #ff9800;
+    }
+    .timeline {
+      position: relative;
+      margin: 50px 0;
+      padding-left: 40px;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 20px;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: #f57c00;
+    }
+    .day {
+      position: relative;
+      margin-bottom: 50px;
+    }
+    .day-number {
+      position: absolute;
+      left: -5px;
+      top: 0;
+      background: #f57c00;
+      color: #0e0e1a;
+      font-weight: bold;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+    }
+    .day-content {
+      margin-left: 50px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 15px;
+      border-radius: 10px;
+    }
+    .day-content h2 {
+      color: #f57c00;
+      margin: 0 0 10px;
+    }
+    .day-content p {
+      margin: 5px 0;
+      font-size: 0.95rem;
+    }
+    .day-content img {
+      width: 100%;
+      margin-top: 10px;
+      border-radius: 10px;
+      max-height: 300px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Back to Packages Button -->
+  <a href="packages.html" class="back-btn">← Back to Packages</a>
+
+  <div class="container">
+    <h1>Manali Trip Itinerary</h1>
+
+    <div class="timeline">
+
+      <!-- Day 1 -->
+      <div class="day">
+        <div class="day-number">01</div>
+        <div class="day-content">
+          <h2>Vadodara → Manali</h2>
+          <p>Board train/flight from Vadodara to Delhi/Chandigarh. Proceed by Volvo/tempo traveller to Manali. Overnight journey.</p>
+          <p>Meals: Dinner</p>
+          <img src="airplane.jpg" alt="Travel">
+        </div>
+      </div>
+
+      <!-- Day 2 -->
+      <div class="day">
+        <div class="day-number">02</div>
+        <div class="day-content">
+          <h2>Arrival & Local Manali</h2>
+          <p>Arrive in Manali. Check-in at hotel. Visit  , Manu Temple, Vashisht Hot Springs, Mall Road. Evening leisure.</p>
+          <p>Meals: Breakfast, Dinner</p>
+          <img src="munutample.jpg" alt="Manali Local">
+        </div>
+      </div>
+
+      <!-- Day 3 -->
+      <div class="day">
+        <div class="day-number">03</div>
+        <div class="day-content">
+          <h2>Solang Valley / Rohtang Pass</h2>
+          <p>Day excursion to Solang Valley (or Rohtang Pass, subject to permit & season). Adventure sports like paragliding, skiing, ATV rides.</p>
+          <p>Meals: Breakfast, Dinner</p>
+          <img src="solangvalley.webp" alt="Solang Valley">
+        </div>
+      </div>
+
+      <!-- Day 4 -->
+      <div class="day">
+        <div class="day-number">04</div>
+        <div class="day-content">
+          <h2>Kullu & Manikaran</h2>
+          <p>Day trip to Kullu for river rafting & shawl factory visit. Proceed to Manikaran Sahib Gurudwara & hot water springs. Return to Manali.</p>
+          <p>Meals: Breakfast, Dinner</p>
+          <img src="hidimbatemple.jpeg" alt="Kullu Manikaran">
+        </div>
+      </div>
+
+      <!-- Day 5 -->
+      <div class="day">
+        <div class="day-number">05</div>
+        <div class="day-content">
+          <h2>Return to Vadodara</h2>
+          <p>Check out from hotel. Drive to Chandigarh/Delhi for return train/flight to Vadodara. Trip ends with sweet memories.</p>
+          <p>Meals: Breakfast</p>
+          <img src="plan2.jpg" alt="Return">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

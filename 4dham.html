@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Char Dham Yatra Itinerary</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #0e0e1a;
+      color: #fff;
+    }
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: auto;
+      padding: 20px 0;
+    }
+    h1 {
+      text-align: center;
+      color: #f57c00;
+    }
+    .back-btn {
+      position: fixed;
+      top: 15px;
+      right: 20px;
+      background: #f57c00;
+      color: #0e0e1a;
+      padding: 10px 18px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background 0.3s;
+      z-index: 1000;
+    }
+    .back-btn:hover {
+      background: #ff9800;
+    }
+    .timeline {
+      position: relative;
+      margin: 50px 0;
+      padding-left: 40px;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 20px;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: #f57c00;
+    }
+    .day {
+      position: relative;
+      margin-bottom: 50px;
+    }
+    .day-number {
+      position: absolute;
+      left: -5px;
+      top: 0;
+      background: #f57c00;
+      color: #0e0e1a;
+      font-weight: bold;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+    }
+    .day-content {
+      margin-left: 50px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 15px;
+      border-radius: 10px;
+    }
+    .day-content h2 {
+      color: #f57c00;
+      margin: 0 0 10px;
+    }
+    .day-content p {
+      margin: 5px 0;
+      font-size: 0.95rem;
+    }
+    .day-content img {
+      width: 100%;
+      margin-top: 10px;
+      border-radius: 10px;
+      max-height: 300px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Back to Packages Button -->
+  <a href="packages.html" class="back-btn">← Back to Packages</a>
+
+  <div class="container">
+    <h1>Char Dham Yatra Itinerary</h1>
+
+    <div class="timeline">
+
+      <!-- Day 1 -->
+      <div class="day">
+        <div class="day-number">01</div>
+        <div class="day-content">
+          <h2>Vadodara → Haridwar</h2>
+          <p>Board Travels  from Vadodara to Haridwar. Evening arrival. Attend Ganga Aarti at Har Ki Pauri.</p>
+          <p>Meals: Dinner</p>
+          <img src="haridwar.png" alt="Haridwar">
+        </div>
+      </div>
+
+      <!-- Day 2 -->
+      <div class="day">
+        <div class="day-number">02</div>
+        <div class="day-content">
+          <h2>Haridwar → Barkot (Yamunotri Base)</h2>
+          <p>Drive to Barkot, the base for Yamunotri. Evening rest.</p>
+          <p>Meals: Breakfast, Dinner</p>
+          <img src="barkothotel.jpg" alt="Barkot">
+        </div>
+      </div>
+
+      <!-- Day 3 -->
+      <div class="day">
+        <div class="day-number">03</div>
+        <div class="day-content">
+          <h2>Yamunotri Darshan</h2>
+          <p>Early morning trek/pony ride to Yamunotri Temple. Take a holy dip in Yamuna Kund. Return to Barkot for night stay.</p>
+          <p>Meals: Breakfast, Dinner</p>
+          <img src="Yamunotri.jpg" alt="Yamunotri">
+        </div>
+      </div>
+
+      <!-- Day 4 -->
+      <div class="day">
+        <div class="day-number">04</div>
+        <div class="day-content">
+          <h2>Rest & Stay at Barkot</h2>
+          <p>Relax after Yamunotri trek. Short local walks, enjoy Himalayan views. Overnight in Barkot.</p>
+          <p>Meals: Breakfast, Dinner</p>
+          <img src="barkotnight.webp" alt="Rest Barkot">
+        </div>
+      </div>
+
+      <!-- Day 5 -->
+      <div class="day">
+        <div class="day-number">05</div>
+        <div class="day-content">
+          <h2>Barkot → Uttarkashi</h2>
+          <p>Drive to Uttarkashi. Evening visit to Vishwanath Temple. Stay overnight.</p>
+          <p>Meals: Breakfast, Dinner</p>
+          <img src="vishwanath tample.webp" alt="Uttarkashi">
+        </div>
+      </div>
+
+      <!-- Day 6 -->
+      <div class="day">
+        <div class="day-number">06</div>
+        <div class="day-content">
+          <h2>Gangotri Darshan</h2>
+          <p>Day excursion to Gangotri Temple. Take holy dip at Bhagirathi River. Return to Uttarkashi for overnight stay.</p>
+          <p>Meals: Breakfast, Dinner</p>
+          <img src="gangotri.jpg" alt="Gangotri">
+        </div>
+      </div>
+
+      <!-- Day 7 -->
+      <div class="day">
+        <div class="day-number">07</div>
+        <div class="day-content">
+          <h2>Rest Day at Uttarkashi</h2>
+          <p>Day free for rest, explore local temples and markets in Uttarkashi. Overnight stay.</p>
+          <p>Meals: Breakfast, Dinner</p>
+          <img src="uttarkashi1.png.jpg" alt="Uttarkashi Rest">
+        </div>
+      </div>
+
+      <!-- Day 8 -->
+      <div class="day">
+        <div class="day-number">08</div>
+        <div class="day-content">
+          <h2>Uttarkashi → Guptkashi (Kedarnath Base)</h2>
+          <p>Drive to Guptkashi. Evening rest and Kedarnath trek prep. Overnight stay.</p>
+          <p>Meals: Breakfast, Dinner</p>
+          <img src="uttarkashi.png" alt="Guptkashi">
+        </div>
+      </div>
+
+      <!-- Day 9 -->
+      <div class="day">
+        <div class="day-number">09</div>
+        <div class="day-content">
+          <h2>Kedarnath Trek & Darshan</h2>
+          <p>Early morning trek to Kedarnath Temple (or by helicopter). Attend evening Aarti. Overnight at Kedarnath.</p>
+          <p>Meals: Breakfast, Dinner</p>
+          <img src="Kedarnath.webp" alt="Kedarnath">
+        </div>
+      </div>
+
+      <!-- Day 10 -->
+      <div class="day">
+        <div class="day-number">10</div>
+        <div class="day-content">
+          <h2>Rest Day at Kedarnath / Return to Guptkashi</h2>
+          <p>Spend morning in Kedarnath for spiritual peace. Trek back to Guptkashi in afternoon. Overnight at Guptkashi.</p>
+          <p>Meals: Breakfast, Dinner</p>
+          <img src="retun treak.jpg" alt="Kedarnath Rest">
+        </div>
+      </div>
+
+      <!-- Day 11 -->
+      <div class="day">
+        <div class="day-number">11</div>
+        <div class="day-content">
+          <h2>Guptkashi → Badrinath</h2>
+          <p>Drive to Badrinath via Joshimath. Evening Aarti at Badrinath Temple.</p>
+          <p>Meals: Breakfast, Dinner</p>
+          <img src="badrinath.jpg" alt="Badrinath">
+        </div>
+      </div>
+
+      <!-- Day 12 -->
+      <div class="day">
+        <div class="day-number">12</div>
+        <div class="day-content">
+          <h2>Badrinath Darshan & Mana Village</h2>
+          <p>Morning darshan at Badrinath Temple. Visit Mana Village (last Indian village near Tibet). Overnight in Badrinath.</p>
+          <p>Meals: Breakfast, Dinner</p>
+          <img src="mana.png" alt="Mana Village">
+        </div>
+      </div>
+
+      <!-- Day 13 -->
+      <div class="day">
+        <div class="day-number">13</div>
+        <div class="day-content">
+          <h2>Rest at Badrinath</h2>
+          <p>Day at leisure. Explore hot springs, meditation and spiritual atmosphere of Badrinath.</p>
+          <p>Meals: Breakfast, Dinner</p>
+          <img src="Kedarnath-Trek-Route.jpg" alt="Badrinath Rest">
+        </div>
+      </div>
+
+      <!-- Day 14 -->
+      <div class="day">
+        <div class="day-number">14</div>
+        <div class="day-content">
+          <h2>Badrinath → Rishikesh</h2>
+          <p>Drive down from Badrinath to Rishikesh. Evening Aarti at Triveni Ghat. Overnight stay in Rishikesh.</p>
+          <p>Meals: Breakfast, Dinner</p>
+              <img src="rishi1.jpeg" alt="Rishikesh">
+        </div>
+      </div>
+
+      <!-- Day 15 -->
+      <div class="day">
+        <div class="day-number">15</div>
+        <div class="day-content">
+          <h2>Return to Vadodara</h2>
+          <p>Check out after breakfast. Board Travels from Rishikesh/Haridwar to Vadodara via Nathdwara . Yatra ends with blessings.</p>
+          <p>Meals: Breakfast</p>
+        <img src="nathdwara.jpg" alt="Return">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore World - Travel Company</title>
+  <style>
+        * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #eee;
+      background: #121212;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: rgba(0,0,0,0.9);
+      color: #fff;
+      padding: 15px 50px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000; 
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+      color: #ffcc00;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    .hero {
+      background: url('mainpage.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      padding: 20px;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.7);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: #ffcc00;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background: #ffcc00;
+      color: #333;
+      padding: 12px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background: #e6b800;
+    }
+
+    section {
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #ffcc00;
+    }
+
+    .about {
+      max-width: 900px;
+      margin: auto;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #ccc;
+    }
+
+    .destinations {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .destination {
+      background: #1e1e1e;
+      width: 30%;
+      margin: 10px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    }
+
+    .destination img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .destination h3 {
+      padding: 15px;
+      color: #ffcc00;
+    }
+
+    .services {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .service {
+      background: #1e1e1e;
+      padding: 20px;
+      width: 30%;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.6);
+      color: #ddd;
+    }
+
+ /* footer */
+
+    footer {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .destination, .service {
+        width: 100%;
+      }
+
+      header {
+        flex-direction: column;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Travel is Therapy</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Discover The World With Us</h1>
+      <p>Your journey begins here. Find your dream destination today.</p>
+      <a href="#contact" class="btn">Contact Us</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About Us</h2>
+    <p class="about">
+      Welcome to ExploreWorld, your trusted travel companion. We specialize in 
+      creating unforgettable travel experiences across the globe. Whether you dream 
+      of relaxing beaches, adventurous treks, or cultural journeys, we have 
+      everything planned for you.
+    </p>
+  </section>
+
+  <section id="destinations">
+    <h2 class="section-title">Popular Destinations</h2>
+    <div class="destinations">
+      <div class="destination">
+        <img src="Maldives.jpg" alt="Beach">
+        <h3>Maldives</h3>
+      </div>
+      <div class="destination">
+        <img src="Switzerland.webp" alt="Mountains">
+        <h3>Switzerland</h3>
+      </div>
+      <div class="destination">
+      <img src="Kedarnath.webp" alt="Temple">
+        <h3>4 Dham Dharmic Yatra</h3>
+      </div>
+    </div>
+    <div class="about-btn" style="margin-top: 30px;">
+      <a href="packages.html" class="btn">Explore More About Packages</a>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Flight Booking</h3>
+        <p>Get the best deals on international and domestic flights.</p>
+      </div>
+      <div class="service">
+        <h3>Hotel Reservations</h3>
+        <p>Stay in the finest hotels at your destination with ease.</p>
+      </div>
+      <div class="service">
+        <h3>Guided Tours</h3>
+        <p>Explore the local culture with our professional guides.</p>
+      </div>
+      <div class="service">
+        <h3>Package Tours</h3>
+        <p>Explore the world with our pre-designed travel packages.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="contact-info">
+      <div class="contact-item">📞 +91 93130 96998</div>
+      <div class="contact-item">📧 travelwithus@gmail.com</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Travel is Therapy | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

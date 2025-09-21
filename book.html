@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Your Trip - ExploreWorld</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #121212;
+      color: #eee;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .form-container {
+      background: #1e1e1e;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.7);
+      width: 100%;
+      max-width: 500px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #ffcc00;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+      background: #2c2c2c;
+      color: #fff;
+    }
+
+    textarea {
+      resize: none;
+      height: 80px;
+    }
+
+    .btn {
+      background: #ffcc00;
+      color: #333;
+      padding: 12px;
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #e6b800;
+    }
+
+    .back-link {
+      display: block;
+      margin-top: 15px;
+      text-align: center;
+      color: #ffcc00;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Book Your Trip</h2>
+    <form action="#" method="post">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+      <label for="mobile">Mobile Number</label>
+      <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+      <label for="address">Full Address</label>
+      <textarea id="address" name="address" placeholder="Enter your full address" required></textarea>
+
+      <label for="package">Select Package</label>
+      <select id="package" name="package" required>
+        <option value="">-- Select a Package --</option>
+        <option value="Goa Beach Escape">Goa Beach Escape</option>
+        <option value="Jaipur Heritage Tour">Jaipur Heritage Tour</option>
+        <option value="Kerala Backwater Cruise">Kerala Backwater Cruise</option>
+        <option value="Rishikesh Adventure Trip">Rishikesh Adventure Trip</option>
+        <option value="4 Dham Dharmic Yatra">4 Dham Dharmic Yatra</option>
+        <option value="Manali Himalayan Tour">Manali Himalayan Tour</option>
+        <option value="Maldives Getaway">Maldives Getaway</option>
+        <option value="Bali Tropical Paradise">Bali Tropical Paradise</option>
+        <option value="Switzerland Alpine Tour">Switzerland Alpine Tour</option>
+        <option value="Thailand Beach & Culture">Thailand Beach & Culture</option>
+        <option value="Dubai Luxury Experience">Dubai Luxury Experience</option>
+        <option value="Singapore City Tour">Singapore City Tour</option>
+      </select>
+
+      <label for="date">Travel Date</label>
+      <input type="date" id="date" name="date" required>
+
+      <button type="submit" class="btn">Submit Booking</button>
+    </form>
+
+    <a href="packages.html" class="back-link">← Back to Packages</a>
+  </div>
+
+</body>
+</html>

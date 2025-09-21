@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rishikesh Trip Itinerary</title>
+  <style>
+        body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #0e0e1a;
+      color: #fff;
+    }
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: auto;
+      padding: 20px 0;
+    }
+    h1 {
+      text-align: center;
+      color: #f57c00;
+    }
+    .back-btn {
+      position: fixed;
+      top: 15px;
+      right: 20px;
+      background: #f57c00;
+      color: #0e0e1a;
+      padding: 10px 18px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background 0.3s;
+      z-index: 1000;
+    }
+    .back-btn:hover {
+      background: #ff9800;
+    }
+    .timeline {
+      position: relative;
+      margin: 50px 0;
+      padding-left: 40px;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 20px;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: #f57c00;
+    }
+    .day {
+      position: relative;
+      margin-bottom: 50px;
+    }
+    .day-number {
+      position: absolute;
+      left: -5px;
+      top: 0;
+      background: #f57c00;
+      color: #0e0e1a;
+      font-weight: bold;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+    }
+    .day-content {
+      margin-left: 50px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 15px;
+      border-radius: 10px;
+    }
+    .day-content h2 {
+      color: #f57c00;
+      margin: 0 0 10px;
+    }
+    .day-content p {
+      margin: 5px 0;
+      font-size: 0.95rem;
+    }
+    .day-content img {
+      width: 100%;
+      margin-top: 10px;
+      border-radius: 10px;
+      max-height: 300px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Back to Packages Button -->
+  <a href="packages.html" class="back-btn">← Back to Packages</a>
+
+  <div class="container">
+    <h1>Rishikesh Trip Itinerary</h1>
+
+    <div class="timeline">
+
+      <!-- Day 1 -->
+      <div class="day">
+        <div class="day-number">01</div>
+        <div class="day-content">
+          <h2>Vadodara to Rishikesh</h2>
+          <p>Assemble at Vadodara station/airport in the afternoon. Board train/flight towards Haridwar/Rishikesh. Overnight journey.</p>
+          <p>Meals: Dinner</p>
+          <img src="airplane.jpg" alt="Travel">
+        </div>
+      </div>
+
+      <!-- Day 2 -->
+      <div class="day">
+        <div class="day-number">02</div>
+        <div class="day-content">
+          <h2>Arrival & Ganga Aarti</h2>
+          <p>Arrive in Rishikesh. Check-in to hotel and rest. In the evening, attend the famous Ganga Aarti at Triveni Ghat.</p>
+          <p>Meals: Breakfast, Lunch, Dinner</p>
+          <img src="rishi1.jpeg" alt="Ganga Aarti">
+        </div>
+      </div>
+
+      <!-- Day 3 -->
+      <div class="day">
+        <div class="day-number">03</div>
+        <div class="day-content">
+          <h2>Adventure & River Rafting</h2>
+          <p>Enjoy thrilling white-water river rafting in the Ganga. Later visit Laxman Jhula & Ram Jhula. Evening free for cafes.</p>
+          <p>Meals: Breakfast, Lunch, Dinner</p>
+          <img src="rishi2.jpeg" alt="River Rafting">
+        </div>
+      </div>
+
+      <!-- Day 4 -->
+      <div class="day">
+        <div class="day-number">04</div>
+        <div class="day-content">
+          <h2>Neelkanth Mahadev Temple & Ashrams</h2>
+          <p>Morning visit to Neelkanth Mahadev Temple. Later, explore Parmarth Niketan Ashram and yoga/meditation sessions.</p>
+          <p>Meals: Breakfast, Lunch, Dinner</p>
+          <img src="rishi4.jpeg" alt="Temple Rishikesh">
+        </div>
+      </div>
+
+      <!-- Day 5 -->
+      <div class="day">
+        <div class="day-number">05</div>
+        <div class="day-content">
+          <h2>Excursion to Haridwar</h2>
+          <p>Day trip to Haridwar. Visit Har Ki Pauri, attend evening Aarti, and enjoy shopping at local bazaars. Return to Rishikesh.</p>
+          <p>Meals: Breakfast, Lunch, Dinner</p>
+          <img src="haridwar.png" alt="Haridwar">
+        </div>
+      </div>
+
+      <!-- Day 6 -->
+      <div class="day">
+        <div class="day-number">06</div>
+        <div class="day-content">
+          <h2>Return to Vadodara</h2>
+          <p>Check out after breakfast. Depart from Rishikesh by afternoon/evening train/flight. Arrive Vadodara by night. Trip ends.</p>
+          <p>Meals: Breakfast, Lunch</p>
+          <img src="plan2.jpg" alt="Return Journey">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

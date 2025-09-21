@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kerala Trip Itinerary</title>
+  <style>
+        body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #0e0e1a;
+      color: #fff;
+    }
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: auto;
+      padding: 20px 0;
+    }
+    h1 {
+      text-align: center;
+      color: #f57c00;
+    }
+    .back-btn {
+      position: fixed;
+      top: 15px;
+      right: 20px;
+      background: #f57c00;
+      color: #0e0e1a;
+      padding: 10px 18px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background 0.3s;
+      z-index: 1000;
+    }
+    .back-btn:hover {
+      background: #ff9800;
+    }
+    .timeline {
+      position: relative;
+      margin: 50px 0;
+      padding-left: 40px;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 20px;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: #f57c00;
+    }
+    .day {
+      position: relative;
+      margin-bottom: 50px;
+    }
+    .day-number {
+      position: absolute;
+      left: -5px;
+      top: 0;
+      background: #f57c00;
+      color: #0e0e1a;
+      font-weight: bold;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+    }
+    .day-content {
+      margin-left: 50px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 15px;
+      border-radius: 10px;
+    }
+    .day-content h2 {
+      color: #f57c00;
+      margin: 0 0 10px;
+    }
+    .day-content p {
+      margin: 5px 0;
+      font-size: 0.95rem;
+    }
+    .day-content img {
+      width: 100%;
+      margin-top: 10px;
+      border-radius: 10px;
+      max-height: 300px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Back to Packages Button -->
+  <a href="packages.html" class="back-btn">← Back to Packages</a>
+
+  <div class="container">
+    <h1>Kerala Trip Itinerary</h1>
+
+    <div class="timeline">
+
+      <!-- Day 1 -->
+      <div class="day">
+        <div class="day-number">01</div>
+        <div class="day-content">
+          <h2>Vadodara to Kochi</h2>
+          <p>Assemble at Vadodara airport/station. Board your flight/train to Kochi. Check-in to hotel. Evening free at leisure.</p>
+          <p>Meals: Dinner</p>
+          <img src="airplane.jpg" alt="Kochi">
+        </div>
+      </div>
+
+      <!-- Day 2 -->
+      <div class="day">
+        <div class="day-number">02</div>
+        <div class="day-content">
+          <h2>Kochi to Munnar</h2>
+          <p>After breakfast, drive to Munnar (hill station). Visit tea plantations, waterfalls, and scenic viewpoints.</p>
+          <p>Meals: Breakfast, Lunch, Dinner</p>
+          <img src="munar.jpg" alt="Munnar">
+        </div>
+      </div>
+
+      <!-- Day 3 -->
+      <div class="day">
+        <div class="day-number">03</div>
+        <div class="day-content">
+          <h2>Munnar Sightseeing</h2>
+          <p>Visit Eravikulam National Park, Mattupetty Dam, Echo Point, and enjoy the cool climate of Munnar.</p>
+          <p>Meals: Breakfast, Lunch, Dinner</p>
+          <img src="kerla1.jpg" alt="Munnar Hills">
+        </div>
+      </div>
+
+      <!-- Day 4 -->
+      <div class="day">
+        <div class="day-number">04</div>
+        <div class="day-content">
+          <h2>Munnar to Thekkady</h2>
+          <p>Travel to Thekkady. Visit Periyar Wildlife Sanctuary, spice plantations, and enjoy a traditional Kathakali show.</p>
+          <p>Meals: Breakfast, Lunch, Dinner</p>
+          <img src="zoo.jpg" alt="Thekkady">
+        </div>
+      </div>
+
+      <!-- Day 5 -->
+      <div class="day">
+        <div class="day-number">05</div>
+        <div class="day-content">
+          <h2>Thekkady to Alleppey (Houseboat)</h2>
+          <p>Check-in to a traditional Kerala houseboat. Cruise through the famous backwaters of Alleppey and enjoy the scenery.</p>
+          <p>Meals: Breakfast, Lunch, Dinner</p>
+          <img src="boathouse.jpg" alt="Alleppey Houseboat">
+        </div>
+      </div>
+
+      <!-- Day 6 -->
+      <div class="day">
+        <div class="day-number">06</div>
+        <div class="day-content">
+          <h2>Return to Vadodara</h2>
+          <p>Check out after breakfast. Drive back to Kochi and depart for Vadodara by afternoon/evening. Trip ends.</p>
+          <p>Meals: Breakfast, Lunch</p>
+        <img src="plan2.jpg" alt="Return Journey">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
